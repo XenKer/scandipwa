@@ -19,11 +19,18 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "plugins": [
+      {
+        "name": "@scandipwa/ts-server-plugin"
+      }
+    ]
   },
   "include": [
     "./node_modules/@scandipwa/scandipwa/src/**/*",
-    "./src/**/*"
+    "./src/**/*",
+    "src/**/*",
+    "node_modules/@scandipwa/scandipwa/src/**/*"
   ],
   "exclude": []
 }

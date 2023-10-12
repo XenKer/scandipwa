@@ -1,0 +1,30 @@
+{
+  "extends": "stylelint-config-recommended-scss",
+  "plugins": ["stylelint-use-logical"],
+  "rules": {
+    "csstools/use-logical": "always",
+    "no-missing-end-of-source-newline": true,
+    "no-descending-specificity": null,
+    "scss/no-global-function-names": null,
+    "indentation": null,
+    "declaration-no-important": true,
+    "declaration-colon-space-after": "always",
+    "block-opening-brace-space-before": "always",
+    "block-closing-brace-empty-line-before": "never",
+
+    "number-max-precision": [
+      0,
+      {
+        "ignoreUnits": ["em", "%", "rem", "s", "ms", ""],
+        "ignoreProperties": [
+          "/^transition/",
+          "text-shadow",
+          "color",
+          "opacity",
+          "line-height"
+        ]
+      }
+    ],
+    "selector-pseudo-element-colon-notation": "double"
+  }
+}
