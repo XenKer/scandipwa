@@ -30,6 +30,9 @@
   }
 
   &-CTA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ff6600;
     color: white;
     font-size: 22px;
@@ -41,6 +44,13 @@
 
     &:hover {
       background-color: #ff3300;
+    }
+
+    &-Close {
+      font-size: 24px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-inline-start: 10px;
     }
   }
 

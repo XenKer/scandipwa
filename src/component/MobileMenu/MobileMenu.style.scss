@@ -1,0 +1,35 @@
+.MobileMenu {
+  background-color: red;
+}
+
+.MobileMenu__MenuIcon {
+  cursor: pointer;
+}
+
+.MobileMenu__MenuWrapper {
+  display: block;
+}
+
+.MobileMenu__MenuWrapper--isOpen {
+  display: none;
+}
+
+.MobileMenu__MenuOverlay {
+  position: fixed;
+  inset: 0;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.MobileMenu__Menu {
+  background-color: orange;
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  width: 300px;
+  height: 100%;
+  z-index: 1000;
+}

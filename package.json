@@ -3,17 +3,18 @@
   "version": "0.0.1",
   "license": "OSL-3.0",
   "dependencies": {
+    "@babel/plugin-transform-typescript": "7.20.2",
+    "@scandipwa/eslint-config": "0.2.1",
     "@scandipwa/scandipwa": "6.2.3",
     "@scandipwa/scandipwa-scripts": "2.4.24",
-    "@scandipwa/eslint-config": "0.2.1",
     "@scandipwa/ts-server-plugin": "0.0.4",
     "@tilework/mosaic": "1.0.0",
     "@tilework/mosaic-craco": "0.0.5",
-    "@types/react": "18.0.17",
     "@types/node": "18.7.15",
+    "@types/react": "18.0.17",
     "postcss": "8.4.5",
-    "react-redux": "8.0.2",
-    "@babel/plugin-transform-typescript": "7.20.2"
+    "react-device-detect": "^2.2.3",
+    "react-redux": "8.0.2"
   },
   "scandipwa": {
     "type": "theme",
