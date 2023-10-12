@@ -7,9 +7,7 @@ function MobileMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    // console.log("Before toggle:", isMenuOpen);
     setIsMenuOpen((prevState) => !prevState);
-    // console.log("After toggle:", isMenuOpen);
   };
 
   return (
