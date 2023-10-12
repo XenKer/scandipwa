@@ -43,4 +43,16 @@
       background-color: #ff3300;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    // Adjusting responsivness for smaller screens (mobile)
+    width: 100%;
+    &-Content {
+      font-size: 18px;
+    }
+    &-CTA {
+      font-size: 20px;
+      margin-inline-start: 0; // margin reset when in mobile mode
+    }
+  }
 }
