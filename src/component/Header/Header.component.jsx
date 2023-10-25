@@ -10,14 +10,21 @@ import "./Header.override.style";
 export { CartOverlay, MyAccountOverlay };
 
 /** @namespace scandipwaproject/Component/Header/Component */
-export class HeaderComponent extends SourceHeaderComponent {
-  render() {
-    return (
-      <div>
-        {super.render()}
-        {isMobile && <MobileMenu />}
-      </div>
-    );
+class HeaderComponent extends SourceHeaderComponent {
+  renderMap = {
+    cancel: this.renderCancelButton.bind(this),
+    back: this.renderBackButton.bind(this),
+    close: this.renderCloseButton.bind(this),
+    title: this.renderTitle.bind(this),
+    logo: this.renderLogo.bind(this),
+    search: this.renderSearchField.bind(this),
+    renderDesktopIcons: this.renderDesktopIcons.bind(this),
+    share: this.renderShareWishListButton.bind(this),
+    ok: this.renderOkButton.bind(this),
+    mobileMenu: this.renderMobileMenu.bind(this),
+  };
+  renderMobileMenu() {
+    return <h1>dsa</h1>;
   }
 }
 

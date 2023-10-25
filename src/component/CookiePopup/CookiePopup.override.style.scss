@@ -1,4 +1,6 @@
 .CookiePopup {
+  // position: fixed;
+  inset-block-end: 0; // position at the bottom of the screen
   background-color: #333;
   opacity: 0.95;
   padding: 20px;
@@ -25,7 +27,7 @@
 
   &-Link {
     font-size: 16px;
-    color: #ff6600;
+    color: #f26323;
     text-decoration: underline;
   }
 
@@ -33,29 +35,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ff6600;
-    color: white;
+    background-color: var(--button-background);
+    color: var(--button-color);
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: var(--button-padding);
+    border-radius: var(--button-border-radius);
     margin-inline-start: auto;
 
-    &:hover {
-      background-color: #ff3300;
-    }
+    border: var(--button-border-width) solid var(--button-border);
 
-    &-Close {
-      font-size: 24px;
-      font-weight: 600;
-      cursor: pointer;
-      margin-inline-start: 10px;
+    &:hover {
+      background-color: var(--button-hover-background);
+      color: var(--button-hover-color);
+      border: var(--button-border-width) solid var(--button-hover-border);
+      transition: background-color 0.25s ease-out, color 0.25s ease-out,
+        border 0.25s ease-out;
     }
   }
 
   @media screen and (max-width: 768px) {
-    // Adjusting responsivness for smaller screens (mobile)
+    // adjusting responsiveness for smaller screens (mobile)
     width: 100%;
     &-Content {
       font-size: 18px;

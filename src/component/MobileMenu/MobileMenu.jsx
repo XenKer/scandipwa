@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { isMobile } from "react-device-detect";
 import MenuComponent from "Component/Menu/Menu.component";
 import "./MobileMenu.style.scss";
