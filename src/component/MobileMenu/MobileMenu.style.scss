@@ -1,17 +1,23 @@
 .MobileMenu {
-  background-color: red;
+  color: var(--color-black);
 }
 
-.MobileMenu__MenuIcon {
+.MenuIcon {
+  @include icon-black-hover-effect;
   cursor: pointer;
+  inset-inline-start: 0;
+
+  &_isActive {
+    fill: var(--primary-base-color);
+  }
 }
 
 .MobileMenu__MenuWrapper {
-  display: block;
+  display: none;
 }
 
 .MobileMenu__MenuWrapper--isOpen {
-  display: none;
+  display: block;
 }
 
 .MobileMenu__MenuOverlay {
@@ -25,11 +31,17 @@
 }
 
 .MobileMenu__Menu {
-  background-color: orange;
+  background-color: white;
   position: fixed;
-  inset-block-start: 0;
-  inset-inline-end: 0;
+  inset: 0;
   width: 300px;
   height: 100%;
   z-index: 1000;
+}
+
+.MobileMenu__CloseButton {
+  margin: 10px;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
 }

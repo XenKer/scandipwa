@@ -24,7 +24,7 @@ class HeaderComponent extends SourceHeaderComponent {
     mobileMenu: this.renderMobileMenu.bind(this),
   };
   renderMobileMenu() {
-    return <h1>dsa</h1>;
+    return isMobile && <MobileMenu />;
   }
 }
 
